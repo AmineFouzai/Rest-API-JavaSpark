@@ -12,7 +12,7 @@ import javax.print.Doc;
 
 public class AuthService {
 
-    MongoClientURI uri = new MongoClientURI("mongodb+srv://john:qMzQeo2yMAfRyrqQ@dolphineducation-vovf3.mongodb.net/Hospital?retryWrites=true&w=majority");
+    MongoClientURI uri = new MongoClientURI(System.getenv("MONGO_URI"));
 
     MongoClient mongoClient = new MongoClient(uri);
 
